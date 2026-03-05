@@ -5,6 +5,10 @@
 [build.environment]
   NODE_VERSION = "20"
 
+[[images.remote_patterns]]
+  protocol = "https"
+  hostname = "images.microcms-assets.io"
+
 [[redirects]]
   from = "/*"
   to = "/404.html"
