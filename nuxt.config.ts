@@ -58,6 +58,13 @@ export default defineNuxtConfig({
     configPath: "tailwind.config.ts",
   },
 
+  // Vite css-post バグ回避（CSS チャンク分割を無効化）
+  vite: {
+    build: {
+      cssCodeSplit: false,
+    },
+  },
+
   compatibilityDate: "2024-11-01",
   devtools: { enabled: false },
 });
