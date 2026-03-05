@@ -10,6 +10,11 @@ export default defineNuxtConfig({
   // SSG mode
   ssr: true,
 
+  // Nitro プリセットを明示的に静的生成に固定
+  nitro: {
+    preset: "netlify-static",
+  },
+
   // グローバルCSS（TailwindCSSはPostCSS経由で処理）
   css: ["~/assets/css/main.css"],
 
