@@ -20,14 +20,14 @@
 
         <!-- Social -->
         <div class="flex flex-col items-center md:items-end">
-           <Button
-            href="https://instagram.com" 
+           <ContactButton
+            href="https://instagram.com"
             target="_blank"
             variant="outline"
             class="!border-gray-600 !text-gray-300 hover:!border-white hover:!text-white mb-4"
           >
             Instagram
-          </Button>
+          </ContactButton>
           <p class="text-xs text-gray-500 mt-4 font-sans">
             &copy; {{ new Date().getFullYear() }} Senjafuda Catalog. All rights reserved.
           </p>
