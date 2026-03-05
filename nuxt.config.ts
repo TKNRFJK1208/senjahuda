@@ -1,7 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-    "@nuxtjs/tailwindcss",
     "@nuxt/image",
     "@nuxtjs/google-fonts",
     "@nuxtjs/sitemap",
@@ -10,6 +9,17 @@ export default defineNuxtConfig({
 
   // SSG mode
   ssr: true,
+
+  // グローバルCSS（TailwindCSSはPostCSS経由で処理）
+  css: ["~/assets/css/main.css"],
+
+  // PostCSS設定
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
 
   // Runtime Config
   runtimeConfig: {
@@ -50,19 +60,6 @@ export default defineNuxtConfig({
   // Robots & Sitemap
   site: {
     url: "https://example.com", // TODO: Replace with actual URL when deploying
-  },
-
-  // Tailwind
-  tailwindcss: {
-    cssPath: "~/assets/css/main.css",
-    configPath: "tailwind.config.ts",
-  },
-
-  // Vite css-post バグ回避（CSS チャンク分割を無効化）
-  vite: {
-    build: {
-      cssCodeSplit: false,
-    },
   },
 
   compatibilityDate: "2024-11-01",
