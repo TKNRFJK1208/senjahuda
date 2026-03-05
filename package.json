@@ -1,0 +1,26 @@
+{
+  "name": "senjafuda-catalog",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/image": "^1.9.0",
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "@nuxtjs/robots": "^5.7.0",
+    "@nuxtjs/sitemap": "^7.1.0",
+    "@nuxtjs/tailwindcss": "^6.11.4",
+    "nuxt": "3.15.4"
+  },
+  "dependencies": {
+    "microcms-js-sdk": "^3.1.0"
+  },
+  "overrides": {
+    "vite": "^5.0.0"
+  }
+}
